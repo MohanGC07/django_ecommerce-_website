@@ -1,0 +1,33 @@
+.main{
+    background: rgb(139,187,150);
+    background: linear-gradient(90deg, rgba(139,187,150,1) 13%, rgba(149,222,221,1) 72%);
+    height: 1000px;
+}
+
+#form-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+.gap{
+background: rgb(139,187,150);
+background: linear-gradient(90deg, rgba(139,187,150,1) 13%, rgba(149,222,221,1) 72%);
+padding: 40px;
+height: 150px;
+}
+.header{
+    background: rgb(123,228,149);
+    background: linear-gradient(90deg, rgb(97, 186, 119) 17%, rgba(50,157,156,1) 72%);
+    padding-top: 10px;
+    color: white;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* #signup-logo{
+width: 100px;
+justify-content: center;
+} */

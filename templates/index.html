@@ -1,0 +1,602 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANGAR</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="{% static 'script.js' %}"defer></script>
+    <script src="{% static 'index.js' %}"defer></script>
+   
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="{% static 'img/logo.jpg' %}" height="50px" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="{% url 'shop' %}">Shop</a></li>
+                <li><a href="{% url 'aboutus' %}">About</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                <li id="lgBag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    
+    </section>
+
+    <section id="hero">
+        <h4>Discount offer</h4>
+        <h2>Heavy discount deals</h2>
+        <h1>on most of products</h1>
+        <p>Save more with QR scan & upto 60% off</p>
+        <button>Shop Now</button>
+    </section>
+
+    <section id="features" class="section-p1">
+        <div class="fe-box">
+            <img src="{% static 'img/free.png' %}" height="70px" alt="">
+            <h6>Free Shipping</h6>
+            
+        </div>
+        <div class="fe-box">
+            <img src="{% static 'img/order.png' %}" height="70px" alt="">
+            <h6>Order Online</h6>
+            
+        </div>
+        <div class="fe-box">
+            <img src="{% static 'img/save.jpg' %}" height="70px" alt="">
+            <h6>Save Money</h6>
+            
+        </div>
+        <div class="fe-box">
+            <img src="{% static 'img/promotion.jpg' %}" height="70px" alt="">
+            <h6>Promotions</h6>
+            
+        </div>
+        <div class="fe-box">
+            <img src="{% static 'img/happy.png' %}" height="70px" alt="">
+            <h6>Happy Shopping</h6>
+            
+        </div>
+        <div class="fe-box">
+            <img src="{% static 'img/service.png' %}" height="70px" alt="">
+            <h6>Free 24/7 Support</h6>
+            
+        </div>
+    </section>
+
+    <section id="product" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer-Spring 2024</p>
+        <div class="proContainer">
+            <div class="pro">
+                <img src="{% static 'img/prod/con2.jpg'  %}" height="200px" alt="">
+                <div class="desciptions">
+                    <span>Converse</span>
+                    <h5>Converse Chuck 70s</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 2500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/prod/con1.jpg' %}" height="200px" alt="">
+                <div class="desciptions">
+                    <span>Converse</span>
+                    <h5>Converse OFF-WHITE </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 7500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/prod/jac1.jpg' %}" height="200px" alt="">
+                <div class="desciptions">
+                    <span>DR.denim</span>
+                    <h5>Dark denim jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 4500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/prod/jac2.jpg' %}" height="200px" alt="">
+                <div class="desciptions">
+                    <span>H&M</span>
+                    <h5>Bomber Jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 3000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/prod/pant1.jpg' %}" height="200px" alt="">
+                <div class="desciptions">
+                    <span>H&M</span>
+                    <h5>Marron pants</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 2500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/prod/pant2.jpg' %}" height="200px" alt="">
+                <div class="desciptions">
+                    <span>H&M</span>
+                    <h5>Straight-fit pants</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 2500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div><div class="pro">
+                <img src="{% static 'img/prod/t1.jpg' %}" height="200px" alt="">
+                <div class="desciptions">
+                    <span>Formal</span>
+                    <h5> Purple shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 2500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/prod/t2.jpg' %}" height="200px" alt="">
+                <div class="desciptions">
+                    <span>Formal</span>
+                    <h5>white shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 2500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+          
+        </div>
+    </section>
+    <section class="services my-4">
+        <div class="container my-5">
+            
+          
+                <div class="row">
+                    <h2>Features Products</h2>
+                    <p>Summer-Spring 2024</p>
+                    {% for n in feature%}
+                    
+                    
+                         <div class="col" id="second-col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle" viewBox="0 0 16 16">
+                                <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"></path>
+                              </svg> 
+                              
+                         
+
+                   
+                    <section id="product" class="section-p1">
+                        
+                        <div class="proContainer">
+                       
+                            
+                        <div class="pro">
+                           
+                            <img src='{{n.image.url}}'height="200px" alt="image">
+                            <div class="desciptions">
+
+                                <span>{{n.type}}</span>
+                                <h5>{{n.name}}</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>                   
+                                    <h4>{{n.price}}</h4>
+                                </div>
+                            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                            </a>
+                            </div>
+                        </div>
+                    </section>
+                                
+                                  
+                                </div>
+                                {% endfor%} 
+                     
+                </div>
+            
+                
+            <div class="container my-3" id="pagination">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        
+                        <li class="page-item" id="prev">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        
+                      
+                        <li class="page-item" id="next">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+           
+        </div>
+    </section>
+    <section class="services my-4">
+        <div class="container my-5">
+            
+          
+                <div class="row">
+                    <h2>latest Products</h2>
+                    <p>Summer-Spring 2024</p> 
+                    {% for n in ftr%}
+                    
+                    
+                         <div class="col" id="second-col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle" viewBox="0 0 16 16">
+                                <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"></path>
+                              </svg> 
+                              
+                         
+
+                   
+                    <section id="product" class="section-p1">
+                        
+                        <div class="proContainer">
+                       
+                            
+                        <div class="pro">
+                           
+                            <img src='{{n.image.url}}'height="200px" alt="image">
+                            <div class="desciptions">
+
+                                <span>{{n.type}}</span>
+                                <h5>{{n.name}}</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>                   
+                                    <h4>{{n.price}}</h4>
+                                </div>
+                            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                            </a>
+                            </div>
+                        </div>
+                    </section>
+                                
+                                  
+                                </div>
+                                {% endfor%} 
+                     
+                </div>
+            
+                
+            <div class="container my-3" id="pagination">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        
+                        <li class="page-item" id="prev">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        
+                      
+                        <li class="page-item" id="next">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+           
+        </div>
+    </section>
+    <section id="banner" class="section-m1">
+        <div class="vop"></div>
+        <h4>Exchange and Customizing Sercvices </h4>
+        <h2>Up to <span>60% off</span> - All Jackets and Shirts</h2>
+        <button class="normal">Explore More</button>
+        
+    </section>
+
+
+
+    <section id="product" class="section-p1">
+        <h2>Latest Products</h2>
+        <p>Hot Drops Fresh from Fashion House</p>
+        <div class="proContainer">
+            <div class="pro">
+                <img src="{% static 'img/product 2/e111.jpeg'%}" height="200px" alt="">
+                <div class="desciptions">
+                    <span>Louis Vuitton</span>
+                    <h5>Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 42500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/product 2/Small1.jpg' %}" height="200px" alt="">
+                <div class="desciptions">
+                    <span>Saint Laurent</span>
+                    <h5>Spark Jacket </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 87500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/product 2/d1.avif'%}" height="200px" alt="">
+                <div class="desciptions">
+                    <span>Louis Vuitton</span>
+                    <h5>pattern Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 84500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/product 2/d2.avif'%} " height="200px" alt="">
+                <div class="desciptions">
+                    <span>Louis Vuitton</span>
+                    <h5>LV shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 34000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/product 2/s2.jpg' %}" height="200px" alt="">
+                <div class="desciptions">
+                    <span>Dolce and Gabbana</span>
+                    <h5>DG shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 27500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/product 2/s3.jpg' %}" height="200px" alt="">
+                <div class="desciptions">
+                    <span>Dolce and Gabbana</span>
+                    <h5>Derbys</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 122500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div><div class="pro">
+                <img src="{% static 'img/product 2/a2.jpg' %}" height="200px" alt="">
+                <div class="desciptions">
+                    <span>Louis Vuitton</span>
+                    <h5> Aviators jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 52500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/product 2/s4.jpg' %}" height="200px" alt="">
+                <div class="desciptions">
+                    <span>Dolce and Gabbana</span>
+                    <h5>DG loafers</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    </div>
+                        <h4>Rs 222500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+          
+        </div>
+    </section>
+   
+
+       
+   
+    <section id="sm-banner" class="section-p1" >
+        <div class="bannerbox">
+            <h4>Awesome deals</h4>
+            <h2>Buy 2 get 1 free</h2>
+            <span>Iconic cloth on SALE at HANGAR</span>
+            <button class="fav" >EXPLORE HERE</button>
+        </div>
+        <div class="bannerbox bannerbox1">
+            <h4>Designer Drops </h4>
+            <h2>From Luxourius Fashion House</h2>
+            <span>Best designer cloth on SALE at HANGAR</span>
+            <button class="fav" >EXPLORE HERE</button>
+        </div>
+    </section>
+
+    <section id="bannerThird" class="section-p1"  >
+        <div class="bannerbox2  ">
+            <h2>Footwear Collection</h2>
+            <h3>All exclusive</h3>
+            
+        </div>
+        <div class="bannerbox2 bannerBox01">
+            <h2>Hoddie collection</h2>
+            <h3>Exclusive Print</h3>
+            
+        </div>
+        <div class="bannerbox2 bannerBox02">
+            <h2>Pants</h2>
+            <h3>Denim pants & formal pants</h3>
+            
+        </div>
+    </section>
+       
+    <section id="newsaletter" class="section-p1 section-m1" >
+        <div class="newtext">
+            <h4>Sign Up for Newsletter</h4>
+            <p>Get email and Regular Update of our <span>Special Offer</span> </p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="your email address">
+            <button class="normal">sign up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="con">
+            <img src="{% static 'img/logo.jpg' %}" height="50px" alt="" class="logo">
+            <h4>Contact</h4>
+            
+            <p><strong>Address</strong> :Dallu, Kathmandu</p>
+            <p><strong>Phone</strong> :9999999999</p>
+            <p> <strong>Hours</strong>:9:00-18:00, Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-youtube"></i>
+
+                </div>
+            </div>
+        </div>
+        <div class="con">
+            <h4> About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">privacy INformation</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">COntact us</a>
+        </div>
+        <div class="con">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View cart</a>
+            <a href="#">My whislist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="con install">
+            <div>
+                <p>secured Payment Gateway</p>
+                <img src="{% static 'img/kkkk.png' %}" height="50px" alt="">
+                <img src="{% static 'img/eswea.png' %}" height="50px" alt="">
+            </div>
+
+        </div>
+        
+    </footer>
+    <div class="copyright">
+            <p>&copy  2024 ,HANGER</p>
+        </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/900b588551.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
